@@ -70,12 +70,18 @@
     }
 
     .brand {
+      color: var(--text);
+      text-decoration: none;
       display: flex;
       align-items: center;
       gap: 12px;
       font-weight: 800;
       letter-spacing: -0.03em;
       font-size: 1.35rem;
+    }
+
+    .brand:hover {
+      text-decoration: none;
     }
 
     .brand-icon {
@@ -427,9 +433,7 @@
 
     .policy-card h1 {
       font-size: clamp(2.4rem, 5vw, 4.2rem);
-      margin: 0 0 16px;
-      letter-spacing: -0.06em;
-      line-height: 1;
+      margin-bottom: 16px;
     }
 
     .policy-card h2 {
@@ -446,11 +450,6 @@
     .policy-card ul {
       margin-top: 8px;
       margin-bottom: 18px;
-      color: var(--muted);
-    }
-
-    .policy-card li {
-      margin: 8px 0;
     }
 
     .last-updated {
@@ -481,31 +480,43 @@
     <article class="policy-card">
       <div class="eyebrow">SnipTap</div>
       <h1>Privacy Policy</h1>
-      <p class="last-updated">Effective date: 1-May-2026</p>
+      <p class="last-updated">Last updated: April 30, 2026</p>
 
-      <p>SnipTap respects your privacy.</p>
+      <p>
+        SnipTap is designed as a local-first productivity app for saving, organizing,
+        and reusing text snippets, templates, and clipboard history.
+      </p>
 
-      <h2>What SnipTap stores</h2>
-      <p>SnipTap stores your app data locally on your device, including:</p>
-      <ul>
-        <li>snippets</li>
-        <li>categories</li>
-        <li>template values</li>
-        <li>clipboard history saved inside the app</li>
-        <li>app preferences and settings</li>
-        <li>Pro entitlement state</li>
-      </ul>
+      <h2>Information stored on your device</h2>
+      <p>
+        SnipTap stores your snippets, categories, template values, clipboard history,
+        app settings, and Pro entitlement state locally on your device.
+      </p>
+
+      <h2>No account required</h2>
+      <p>
+        SnipTap does not currently require an account, sign-in, or cloud sync.
+      </p>
+
+      <h2>No ads or advertising ID</h2>
+      <p>
+        SnipTap does not show ads and does not use the Android advertising ID.
+      </p>
 
       <h2>Clipboard access</h2>
       <p>
-        SnipTap may read clipboard content only when you use clipboard-related features inside the app,
-        such as creating or saving snippets from copied text.
+        SnipTap may read clipboard content only for app features such as clipboard history
+        and creating snippets from copied text. Clipboard content is stored locally on your device.
       </p>
 
-      <h2>Import and export</h2>
+      <h2>Feedback and issue reports</h2>
       <p>
-        If you use import or export features, the selected files are accessed only for that purpose.
-        Exported files are controlled by you and stored wherever you choose to save them.
+        If you choose to send feedback or report an issue, SnipTap may include useful diagnostic
+        information in the email, such as app version, Android version, device model, current screen,
+        timestamp, and recent non-sensitive app diagnostics.
+      </p>
+      <p>
+        The report is sent only when you choose to send it through your email app.
       </p>
 
       <h2>Purchases</h2>
@@ -514,33 +525,21 @@
         confirmation are managed by Google Play.
       </p>
 
-      <h2>Feedback and issue reports</h2>
+      <h2>Data export and import</h2>
       <p>
-        If you use the feedback/report issue feature, your email app may open with pre-filled technical
-        information such as:
+        SnipTap lets users export their data for backup. Import is available with SnipTap Pro.
+        Exported files are controlled by you and stored wherever you choose to save them.
       </p>
-      <ul>
-        <li>app version</li>
-        <li>Android version</li>
-        <li>device model</li>
-        <li>current screen</li>
-        <li>recent non-sensitive diagnostics</li>
-      </ul>
-      <p>This information is only included to help investigate issues and is sent only if you choose to send the email.</p>
 
       <h2>Data sharing</h2>
-      <p>SnipTap does not sell your personal data.</p>
       <p>
-        SnipTap does not automatically send your app data to us unless you choose to send feedback
-        or support information yourself.
+        SnipTap does not sell your personal data. SnipTap does not currently upload your snippets
+        or clipboard history to a SnipTap server.
       </p>
-
-      <h2>Accounts and cloud sync</h2>
-      <p>SnipTap does not currently require an account and does not currently provide cloud sync.</p>
 
       <h2>Contact</h2>
       <p>
-        If you have any questions, contact:
+        For questions, feedback, or privacy requests, contact:
         <a href="mailto:support@sniptap.app">support@sniptap.app</a>
       </p>
     </article>

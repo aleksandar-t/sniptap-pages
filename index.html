@@ -70,12 +70,18 @@
     }
 
     .brand {
+      color: var(--text);
+      text-decoration: none;
       display: flex;
       align-items: center;
       gap: 12px;
       font-weight: 800;
       letter-spacing: -0.03em;
       font-size: 1.35rem;
+    }
+
+    .brand:hover {
+      text-decoration: none;
     }
 
     .brand-icon {
@@ -416,10 +422,10 @@
 <body>
   <header>
     <div class="shell nav">
-      <div class="brand">
+      <a class="brand" href="index.html" aria-label="SnipTap home">
         <img class="brand-icon" src="sniptap-icon.webp" alt="SnipTap icon" />
         <span>SnipTap</span>
-      </div>
+      </a>
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#features">Features</a>
         <a href="#guide">Guide</a>
